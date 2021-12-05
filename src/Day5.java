@@ -4,13 +4,10 @@ import java.util.List;
 
 public class Day5 {
     public static void main(String[] args) {
-
         //exampleRun();
         List<LineCoordinates> coordinatesList = preparingData();
         Grid grid = new Grid(1000,1000);
-        for (LineCoordinates lc:coordinatesList) {
-            grid.fromToGrid(lc.getX(), lc.getY(), lc.getX2(), lc.getY2());
-        }
+        coordinatesList.forEach(lc -> grid.fromToGrid(lc.getX(), lc.getY(), lc.getX2(), lc.getY2()));
         System.out.println(grid.getOverlap());
     }
     public static void exampleRun(){
