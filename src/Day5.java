@@ -1,6 +1,8 @@
 import javax.sound.sampled.Line;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Day5 {
     public static void main(String[] args) {
